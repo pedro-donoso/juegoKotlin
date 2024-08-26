@@ -56,3 +56,14 @@ val nav_version = "2.7.7"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+4. Configuro themes.xml:
+
+```
+   <?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.JuegoKotlin" parent="Theme.AppCompat" />
+</resources>
+```
+
