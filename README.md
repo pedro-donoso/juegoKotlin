@@ -1,4 +1,6 @@
-#### 1 - Configuro gradle app:
+#### CONFIGURACIONES PREVIAS
+
+1. Configuro gradle app:
 
 ```
 buildFeatures {
@@ -9,7 +11,7 @@ buildFeatures {
         enable = true
     }
   ```
-#### 2 - Dependencies:
+2. Dependencies:
 
 ```
 val nav_version = "2.7.7"
@@ -19,7 +21,7 @@ val nav_version = "2.7.7"
     implementation ("com.airbnb.android:lottie:3.7.0")
 ```
 
-#### 3 - Configuro main_activity:
+3. Configuro main_activity:
 
 ```
 <androidx.constraintlayout.widget.ConstraintLayout
