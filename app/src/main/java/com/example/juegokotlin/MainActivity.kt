@@ -12,6 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer1, Player1Fragment())
+            .replace(R.id.fragmentContainer2, Player2Fragment())
+            .commit()
     }
 
     override fun onDestroy() {
