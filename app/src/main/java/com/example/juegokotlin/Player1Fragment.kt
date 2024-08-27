@@ -19,7 +19,7 @@ class Player1Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
      _binding = FragmentPlayer1Binding.inflate(inflater, container, false)
         return binding.root
 
