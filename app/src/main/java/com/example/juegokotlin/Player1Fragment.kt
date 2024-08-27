@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+
 import com.example.juegokotlin.databinding.FragmentPlayer1Binding
 
 class Player1Fragment : Fragment() {
@@ -22,7 +23,6 @@ class Player1Fragment : Fragment() {
     ): View {
      _binding = FragmentPlayer1Binding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -45,5 +45,4 @@ class Player1Fragment : Fragment() {
         super.onDestroy()
         _binding = null
     }
-
 }
