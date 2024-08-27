@@ -40,6 +40,10 @@ class Player2Fragment : Fragment() {
         }
     }
 
+    fun disableButton() {
+        binding.clickButton.isEnabled = false
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
