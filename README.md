@@ -54,6 +54,36 @@ val nav_version = "2.7.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+    
+    <FrameLayout
+        android:id="@+id/animationContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone">
+        
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/winnerAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/a"
+            />
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="16dp"/>
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
