@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout principal que utiliza el constraint layout-->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
 
+<!--    Contiene el fragmento del jugador 1-->
     <FrameLayout
         android:id="@+id/fragmentContainer1"
         android:layout_width="0dp"
@@ -19,6 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <!--    Contiene el fragmento del jugador 2-->
     <FrameLayout
         android:id="@+id/fragmentContainer2"
         android:layout_width="0dp"
@@ -28,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
-    
+
+    <!--    Contiene la animación del ganador oculta -->
     <FrameLayout
         android:id="@+id/animationContainer"
         android:layout_width="0dp"
@@ -38,7 +42,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="gone">
-        
+
+<!--        Muestra la animación del ganador-->
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/winnerAnimation"
             android:layout_width="wrap_content"
@@ -49,6 +54,7 @@
             app:lottie_rawRes="@raw/a"
             />
 
+<!--       Reinicia el juego-->
         <Button
             android:id="@+id/restartButton"
             android:layout_width="wrap_content"
