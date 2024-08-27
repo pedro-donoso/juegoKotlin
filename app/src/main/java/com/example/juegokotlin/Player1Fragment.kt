@@ -41,6 +41,10 @@ class Player1Fragment : Fragment() {
         }
     }
 
+    fun disableButton() {
+        binding.clickButton.isEnabled = false
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
