@@ -1,3 +1,7 @@
+![juego](https://github.com/user-attachments/assets/188975b3-7d17-44d7-847d-6b9196c53cd8)
+
+![ganador](https://github.com/user-attachments/assets/56faf810-9a4e-4320-aa05-c5e4775f2380)
+
 #### CONFIGURACIONES PREVIAS
 
 1. Configuro gradle app:
