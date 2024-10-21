@@ -25,7 +25,7 @@ val nav_version = "2.7.7"
     implementation ("com.airbnb.android:lottie:3.7.0")
 ```
 
-3. Configuro main_activity:
+3. Configuro activity_main:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
