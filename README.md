@@ -2,7 +2,7 @@
 
 ![ganador](https://github.com/user-attachments/assets/56faf810-9a4e-4320-aa05-c5e4775f2380)
 
-#### CONFIGURACIONES PREVIAS
+#### CONFIGURACIONES
 
 1. Configuro gradle app:
 
@@ -166,4 +166,20 @@ val nav_version = "2.7.7"
     </LinearLayout>
 
 </FrameLayout>
+```
+
+7. Configuro Manifest:
+
+```
+ <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+</activity>
 ```
